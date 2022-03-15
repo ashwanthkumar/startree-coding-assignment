@@ -7,10 +7,10 @@ This solution is designed against `minikube` running locally on a Mac. If you al
 ## Usage
 
 ```
-# To get started, we first have to install the necessary components into our cluster
-$ ./tools.sh install
+# To install Pinot, Prometheus, Grafana, Prometheus-Adapter to our k8s
+$ ./components.sh install
 
-# After testing things out you can run the following to remove all the components that we installed locally
-$ ./tools.sh remove
+# To remove the above installed components after testing run this to claim the system resources
+$ ./components.sh remove
 ```
 
