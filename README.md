@@ -2,7 +2,11 @@
 
 Refer to [PROBLEM.md](./PROBLEM.md) for the problem statement.
 
-This solution is designed against `minikube` running locally on a Mac. If you already don't have minikube setup locally, please refer to https://minikube.sigs.k8s.io/docs/start/ to download and install the right version of the binary on your machine. After which you need to run `minikube start`. The Usage section assumes you can run `minikube kubectl -- get pods -A` successfully. You also need to make sure `helm` is installed and is available on PATH, please refer to https://helm.sh/docs/intro/install/ for installation instructions for Helm.
+## Requirements
+
+- [minikube](https://minikube.sigs.k8s.io/docs/start/): After installing, run `minikube start`. The Usage section assumes you can run `minikube kubectl -- get pods -A` successfully. 
+- Run `alias kubectl="minikube kubectl --"` to point `kubectl` to one from `minikube`.
+- [helm](https://helm.sh/docs/intro/install/): After installing, run `helm version` and it should print the version of helm which should be v3.8+.
 
 ## Changes to the helm values
 ### Pinot
