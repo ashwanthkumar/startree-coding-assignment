@@ -25,7 +25,10 @@ Refer to [PROBLEM.md](./PROBLEM.md) for the problem statement.
 # To install Pinot, Prometheus, Grafana, Prometheus-Adapter to our k8s
 $ ./components.sh demo-auto-scale
 
-# To remove the above installed components after testing run this to claim the system resources
-$ ./components.sh remove
+# After testing the auto-scale
+$ minikube stop && minikube delete
 ```
 
+## Demo
+
+[![asciicast](https://asciinema.org/a/FLu0O3u8QK83iCUbA8dizXBUg.svg)](https://asciinema.org/a/FLu0O3u8QK83iCUbA8dizXBUg?autoplay=1)
