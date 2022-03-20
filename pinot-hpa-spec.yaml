@@ -19,7 +19,7 @@ spec:
     pods:
       # use the metric that you used above: pods/http_requests
       metric: 
-        name: pinot_broker_queries_Count
+        name: pinot_broker_queries_FiveMinuteRate
       target: 
         type: AverageValue
         averageValue: 10

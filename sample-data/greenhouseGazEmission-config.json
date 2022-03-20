@@ -1,7 +1,7 @@
 {
   "tableName": "greenhouseGazEmission",
   "segmentsConfig" : {
-    "replication" : "1",
+    "replication" : "2",
     "schemaName" : "greenhouseGazEmission"
   },
   "tableIndexConfig" : {
