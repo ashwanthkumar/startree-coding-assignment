@@ -72,7 +72,7 @@ function load_data {
 }
 
 function trigger_load {
-  kubectl port-forward service/pinot-controller 9000:9000 -n pinot &
+  kubectl port-forward service/pinot-controller 9000:9000 -n pinot > /dev/null &
   CONTROLLER_PORT_FORWARD_PID=$!
   log "waiting for a few seconds for the kubectl port-forward to start"
   sleep 5
@@ -81,7 +81,7 @@ function trigger_load {
   log "Starting load on the server. Running ${MAX_COUNT} queries"
   for i in `seq 1 ${MAX_COUNT}`;
   do
-    if (( $i % 1000 == 0))
+    if (( $i % 1000 == 0 ))
     then
       log "Made $i requests so far out of ${MAX_COUNT}"
     fi
