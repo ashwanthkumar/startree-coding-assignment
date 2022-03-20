@@ -12,6 +12,11 @@ function start_local {
 }
 
 function install {
+    helm repo add pinot https://raw.githubusercontent.com/apache/pinot/master/kubernetes/helm
+    helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+    helm repo add grafana https://grafana.github.io/helm-charts
+    helm repo update
+
     ## Install Pinot
     log "Installing Pinot via Helm with timeout of 10m"
     ## This should help create NS if not exist else it would not do anything we can safely run this multiple times

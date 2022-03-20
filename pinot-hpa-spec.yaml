@@ -1,0 +1,25 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: pinot-broker
+spec:
+  scaleTargetRef:
+    # point the HPA at the sample application
+    # you created above
+    apiVersion: apps/v1
+    kind: StatefulSet
+    name: pinot-broker
+  # autoscale between 1 and 10 replicas
+  minReplicas: 1
+  maxReplicas: 2
+  metrics:
+  # use a "Pods" metric, which takes the average of the
+  # given metric across all pods controlled by the autoscaling target
+  - type: Pods
+    pods:
+      # use the metric that you used above: pods/http_requests
+      metric: 
+        name: pinot_broker_queries_Count
+      target: 
+        type: AverageValue
+        averageValue: 10

@@ -69,6 +69,13 @@ case $op in
     remove
   ;;
 
+  "trigger-load")
+    for i in {1..100000};
+    do
+      curl 'http://localhost:9000/sql' --data-raw '{"sql":"select * from greenhouseGazEmission limit 1","trace":false}' > /dev/null
+    done
+  ;;
+
   *)
     me=`basename "$0"`
     echo "Invalid Usage."
