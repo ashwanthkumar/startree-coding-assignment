@@ -1,0 +1,17 @@
+{
+  "tableName": "greenhouseGazEmission",
+  "segmentsConfig" : {
+    "replication" : "1",
+    "schemaName" : "greenhouseGazEmission"
+  },
+  "tableIndexConfig" : {
+    "invertedIndexColumns" : [],
+    "loadMode"  : "MMAP"
+  },
+  "tenants" : {
+    "broker":"DefaultTenant",
+    "server":"DefaultTenant"
+  },
+  "tableType":"OFFLINE",
+  "metadata": {}
+}

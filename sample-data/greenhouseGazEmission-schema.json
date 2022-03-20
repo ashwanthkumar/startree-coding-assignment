@@ -1,0 +1,127 @@
+{
+  "schemaName": "greenhouseGazEmission",
+  "dimensionFieldSpecs": [
+    {
+      "name": "airpol",
+      "dataType": "STRING"
+    },
+    {
+      "name": "nace_r2",
+      "dataType": "STRING"
+    },
+    {
+      "name": "unit",
+      "dataType": "STRING"
+    },
+    {
+      "name": "geo",
+      "dataType": "STRING"
+    }
+  ],
+  "metricFieldSpecs": [
+    {
+      "name": "2020",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2019",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2018",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2017",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2016",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2015",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2014",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2013",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2012",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2011",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2010",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2009",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2008",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2007",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2006",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2005",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2004",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2003",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2002",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2001",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "2000",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "1999",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "1998",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "1997",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "1996",
+      "dataType": "FLOAT"
+    },
+    {
+      "name": "1995",
+      "dataType": "FLOAT"
+    }
+  ]
+}
